@@ -1,0 +1,434 @@
+// Custom Variables // Font Awesome icons
+
+@import "variables.scss";
+@import "contact.scss";
+@import '../bower_components/font-awesome-sass/assets/stylesheets/font-awesome';
+
+/* Header */
+
+header {
+    background: url('../img/halftone-bg.jpg') no-repeat; 
+    background-size: cover;
+    background-position: left;
+    padding-top: 10px;
+    padding-bottom: 40px;
+}
+
+/* Navigation */
+
+.top-bar {
+    background-color: $black;
+    margin-top: 20px;
+
+    .boom-logo-1 {
+        width: 100px;
+        margin-left: 15px;
+    }
+
+    ul {background-color: $black;}
+
+.top-bar-right {
+
+    a {
+        color: $white;
+        background-color: $black;
+        text-transform: uppercase;
+        font-size: .8em;
+        font-weight: 600;
+    }
+
+    a:hover {
+        color: $boom-orange-red;
+    }
+}
+
+}
+
+/* Radio Player */
+
+.radio-player {
+    margin-bottom: -20px;
+ 
+    .grid-container {
+    //    max-width: 950px;
+       z-index: 2;
+    }
+    .cell {
+        padding: 20px 0;
+        text-align: center;
+    }
+
+    .album-cover {
+        width: 70px;
+        float: right;
+    }
+
+    h1 {
+        font-size: .6em;
+        color: $white;
+    }
+
+    .song-info {
+        list-style: none;
+        color: $white;
+        font-size: .8em;
+        font-weight: bold;
+        text-align: left;
+
+        li:first-child {
+           text-transform: uppercase;
+            margin-bottom: 8px;
+          }
+
+        li {
+            margin-bottom: -5px;
+        }
+    }
+
+    .fa {color: $white; 
+    font-size: 50px;
+}
+.radio-switch {
+    padding-top: 10px;
+}
+}
+
+.curved-header {
+    position: relative;
+    width: 100%;
+    height: 130px; 
+    overflow: hidden;
+    z-index: 1;
+    }
+    
+    .curved-header:before {
+        content: '';
+        z-index: -1;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: $boom-orange-red;
+        border-radius: 0 0 50% 50%/0 0 100% 100%;
+        transform: scaleX(1.5);
+    }
+
+
+/* Carousel/Orbit */
+
+.orbit-image {
+    border: 7px solid $white;
+}
+
+.orbit-bullets {
+    margin: 0;
+    position: absolute;
+    top: 85%;
+    left: 45%;
+
+    button {
+       background-color: $white; 
+    }
+}
+
+/* Subheaders */
+
+.main-1-header, .main-2-header, .main-3-header, .main-4-header {
+padding-top: 25px;
+
+h2 { 
+    width: 180px;
+    background-color: $white;
+    color: $black; 
+    text-transform: uppercase;
+font-weight: 600;
+letter-spacing: .1em;
+border: 3px $black solid;
+padding: 12px 0px;
+box-shadow: 5px 5px $black;
+}
+
+.button:hover {
+    background-color: $white;
+    color: $black;
+}
+
+}
+
+/* Index Programs */
+
+.program-tabs-style {
+
+       a, a[aria-selected='true'] {
+            color: $black;
+            font-size: .9em;
+            font-weight: 600;
+            letter-spacing: .1em;
+        }
+        
+        a:hover {
+            background-color:$medium-gray; 
+            color: $black;
+        }
+
+        .tabs-panel {
+            background-color: $light-gray;
+
+            .callout {
+                border: 0;
+                border-radius: 10px;
+                padding-bottom: 0;
+                text-align: center;
+            }
+        }
+   
+}
+
+.accordion-menu .is-accordion-submenu-parent:not(.has-submenu-toggle) > a::after {
+    border-color: #0d0d0d transparent transparent!important;
+   }
+
+/* Index Contest & Trending */
+.contest-content-style, .trending-content-style {
+    background-color: $light-gray;
+    margin: 0 15px;
+
+    .card-section {
+       h2 {
+           font-size: 1em;
+           font-weight: 600;
+       }
+
+       p {
+           font-size: .8em;
+           color: $boom-orange-red;
+           font-weight: 600;
+       }
+    }
+
+img {
+    width: 100%;
+}    
+
+
+
+}
+
+/* Index Contact */
+
+.contact-content-style {
+    background: url('../img/halftone-bg.jpg') no-repeat; 
+    background-size: cover;
+    background-position: left;
+
+    .callout {
+        margin-top: 15px;
+        border-radius: 10px;
+    }
+
+    .form-style {
+        background: transparent;
+        border: 0;
+
+        label {
+            text-transform: uppercase;
+            font-weight: 600;
+            letter-spacing: .2em;
+        }
+
+        input {
+            border-radius: 5px;
+            border: 0px;
+        }
+
+        textarea {
+            border-radius: 5px;
+            border: 0px;
+            height: 120px;
+        }
+
+        .button { background-color: $black; }
+    }
+}
+
+/* Footer */
+
+footer {
+    background-color: $black;
+    padding: 20px 0px;
+
+    .menu {
+        a {
+            color: $white;
+            text-transform: uppercase;
+            letter-spacing: .2em;
+            font-size: .7em;
+            font-weight: 600;
+        }
+    
+        a:hover {
+            color: $boom-orange-red;
+        }
+
+        .img-socmed {
+            width: 25px;
+        }
+    }
+}
+
+/* Bio Page */
+
+.show-dropdown {
+    border-style: solid;
+}
+.bio {
+    h3, h4 {
+        color: $boom-orange-red;
+        border-color: black;
+        border-bottom-style: solid;
+    }
+}
+.bio-portrait {
+    border-style: double;
+    border-width: 10px;
+    width: 100%;
+    max-width: 540px;
+    height: auto;
+}
+
+/* Article Content Page */
+
+.article-content {
+    background-color: $light-gray;
+    margin-top: 5px;
+
+    h3, h4 {
+        color: $boom-orange-red;
+        border-color: black;
+        border-bottom-style: solid;
+    }
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+/* Contact Page Main */
+
+.contact-us-section {
+    padding: 2rem;
+    width: 100%;
+    margin: auto;
+    background: $light-gray;
+
+    img {
+    border: solid 2px $white;
+  }
+}
+  .columns {
+      width: 50%;
+  }
+  .contact-us-list li{
+      margin-top: 20px;
+      margin-bottom: 20px;
+  }
+  .contact-us-form-actions input {
+      background-color: $boom-orange-red;
+  }
+  .contact-us-form-actions input:hover {
+      background-color:$boom-orange-yellow;
+  }
+  .contact-us-section .contact-us-section-left {
+    padding-right: 2rem;
+    padding-bottom: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  @media print, screen and (min-width: 40em) {
+    .contact-us-section .contact-us-section-left {
+      border-bottom: 0;
+      padding-bottom: 0;
+      margin-bottom: 0;
+    }
+  }
+  @media print, screen and (min-width: 40em) {
+    .contact-us-section .contact-us-section-left {
+      border-bottom: 0;
+      padding-bottom: 0;
+      margin-bottom: 0;
+    }
+  }
+  @media print, screen and (min-width: 40em) {
+    .contact-us-section .contact-us-section-right {
+      border-left: 1px solid #636363;
+    }
+  }
+/*Resized Monitor*/
+@media only screen and (max-width : 800px ){
+    .contact-us-section .contact-us-section-right {
+         display: inline-block;
+         width: 100%;
+         margin: 0; 
+         border-top: solid 1px $black;
+     }
+     .contact-us-section-left {
+         display: inline-block;
+         width: 100%;
+         margin: 0;
+     }
+ }
+
+
+/* Responsive for Mobile Device 639 x 812 */
+
+@media screen and (max-width: 639px) {
+
+
+.top-bar-right {
+
+        li {
+            padding-top: 2px;
+        }
+    
+        a {
+            color: $black !important;
+            background-color: $light-gray !important;
+        }
+    
+        a:hover {
+            color: $boom-orange-red !important;
+        }
+    }
+    .top-bar {
+        background-color: $white;
+        padding-left: 0;
+        padding-right: 0;
+
+        .top-bar-left {
+            text-align: center;
+        }
+
+        ul {background-color: $white;}
+
+        .top-nav-sm {
+            background-color: $black;
+            padding: 30px 0;
+            margin-top: 8px;
+
+            img {width: 30px;}
+
+            a {background-color: $black !important;}
+        }   
+    }
+
+
+.orbit-bullets {
+        margin: 0;
+        position: absolute;
+        top: 75%;
+        left: 45%;
+    }
+
+}
+

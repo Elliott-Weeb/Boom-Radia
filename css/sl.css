@@ -1,0 +1,620 @@
+.home-container{
+  width:100%;
+  height: auto;
+}
+
+.trends_c_link{
+  background-color: transparent;
+  color: #2199e8;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.trends_c_link:hover{
+  color: #1585cf;
+}
+
+/* Stations - Elliott Webb*/
+.padding {
+  width: 100%;
+  height: 12.5%;
+}
+
+.station {
+  position: relative;
+  width: 55px;
+  height: 55px;
+  margin-left: auto;
+  margin-right: auto;
+  top: 25%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  -webkit-box-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-justify-content: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding-left: 5%;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+.title {
+  font-size: 0.8em;
+  line-height: 4vw;
+  color: #fff;
+  float: left;
+}
+
+.subtitle {
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: 25%;
+  color: white;
+}
+
+.biopage, .article-content {
+  background-color: #f3f3f3;
+  padding: 50px 0;
+  margin-top: -45px;
+}
+
+.article-content {
+  margin-bottom:20px;
+}
+
+#external {
+  color: white;
+  text-align: left;
+  width: 50%;
+  font-size: 0.7em;
+}
+#external a {
+  color: white;
+  text-decoration: underline;
+}
+#external a:hover {
+  opacity: 0.8;
+  font-size: 1em;
+}
+
+.album-cover {
+  max-height: 153px;
+  max-width: 153px;
+}
+
+/*Waves - - Elliott Webb*/
+.wave-bars {
+  position: relative;
+  z-index: 1;
+  height: 100%;
+}
+.wave-bars .wave {
+  margin-top: 25%;
+  transform: translateY(-50%);
+  height: 15px;
+  width: 20px;
+  background: rgba(255, 255, 255, 0.2);
+  float: left;
+  margin-right: 3px;
+  animation-delay: 2s;
+}
+.wave-bars .wave:first-child {
+  margin-left: 2px;
+}
+.wave-bars .wave:last-child {
+  margin-right: 2px;
+}
+.wave-bars .wave.wave-1 {
+  animation: wave1 0.5s linear alternate infinite;
+}
+.wave-bars .wave.wave-2 {
+  animation: wave2 0.7s linear alternate infinite;
+}
+.wave-bars .wave.wave-3 {
+  animation: wave3 0.6s linear alternate infinite;
+}
+.wave-bars .wave.wave-4 {
+  animation: wave4 0.5s linear alternate infinite;
+}
+.wave-bars .wave.wave-5 {
+  animation: wave5 0.6s linear alternate infinite;
+}
+.wave-bars .wave.no-animation {
+  animation: stopwaves 1s linear;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes wave1 {
+  0% {
+    height: 10%;
+  }
+  33% {
+    height: 30%;
+  }
+  66% {
+    height: 15%;
+  }
+  100% {
+    height: 35%;
+  }
+}
+@-moz-keyframes wave1 {
+  0% {
+    height: 10%;
+  }
+  33% {
+    height: 30%;
+  }
+  66% {
+    height: 15%;
+  }
+  100% {
+    height: 35%;
+  }
+}
+@keyframes wave1 {
+  0% {
+    height: 10%;
+  }
+  33% {
+    height: 30%;
+  }
+  66% {
+    height: 15%;
+  }
+  100% {
+    height: 35%;
+  }
+}
+@-webkit-keyframes wave2 {
+  0% {
+    height: 40%;
+  }
+  33% {
+    height: 20%;
+  }
+  66% {
+    height: 40%;
+  }
+  100% {
+    height: 20%;
+  }
+}
+@-moz-keyframes wave2 {
+  0% {
+    height: 40%;
+  }
+  33% {
+    height: 20%;
+  }
+  66% {
+    height: 40%;
+  }
+  100% {
+    height: 20%;
+  }
+}
+@keyframes wave2 {
+  0% {
+    height: 40%;
+  }
+  33% {
+    height: 20%;
+  }
+  66% {
+    height: 40%;
+  }
+  100% {
+    height: 20%;
+  }
+}
+@-webkit-keyframes wave3 {
+  0% {
+    height: 30%;
+  }
+  33% {
+    height: 45%;
+  }
+  66% {
+    height: 30%;
+  }
+  100% {
+    height: 15%;
+  }
+}
+@-moz-keyframes wave3 {
+  0% {
+    height: 30%;
+  }
+  33% {
+    height: 45%;
+  }
+  66% {
+    height: 30%;
+  }
+  100% {
+    height: 15%;
+  }
+}
+@keyframes wave3 {
+  0% {
+    height: 45%;
+  }
+  33% {
+    height: 20%;
+  }
+  66% {
+    height: 30%;
+  }
+  100% {
+    height: 15%;
+  }
+}
+@-webkit-keyframes wave4 {
+  0% {
+    height: 30%;
+  }
+  33% {
+    height: 25%;
+  }
+  66% {
+    height: 45%;
+  }
+  100% {
+    height: 25%;
+  }
+}
+@-moz-keyframes wave4 {
+  0% {
+    height: 30%;
+  }
+  33% {
+    height: 25%;
+  }
+  66% {
+    height: 45%;
+  }
+  100% {
+    height: 25%;
+  }
+}
+@keyframes wave4 {
+  0% {
+    height: 30%;
+  }
+  33% {
+    height: 25%;
+  }
+  66% {
+    height: 45%;
+  }
+  100% {
+    height: 25%;
+  }
+}
+@-webkit-keyframes wave5 {
+  0% {
+    height: 20%;
+  }
+  33% {
+    height: 35%;
+  }
+  66% {
+    height: 15%;
+  }
+  100% {
+    height: 35%;
+  }
+}
+@-moz-keyframes wave5 {
+  0% {
+    height: 20%;
+  }
+  33% {
+    height: 35%;
+  }
+  66% {
+    height: 15%;
+  }
+  100% {
+    height: 35%;
+  }
+}
+@keyframes wave5 {
+  0% {
+    height: 20%;
+  }
+  33% {
+    height: 35%;
+  }
+  66% {
+    height: 15%;
+  }
+  100% {
+    height: 35%;
+  }
+}
+@keyframes stopwaves {
+  100% {
+    height: 3px;
+  }
+}
+/* Controls */
+.controlsOuter {
+  color: white;
+  position: relative;
+  width: 50px;
+  height: 50px;
+  bottom: 3%;
+}
+
+/* Radio Player - Elliott Webb */
+.radio-player {
+  background-color: #F27405;
+  border-bottom-left-radius: 40%;
+  border-bottom-right-radius: 40%;
+  position: relative;
+  overflow: hidden;
+}
+.radio-player .grid-container {
+  max-width: 950px;
+}
+.radio-player .cell {
+  padding: 20px 0;
+  text-align: center;
+}
+.radio-player h1 {
+  font-size: 0.6em;
+  color: #fefefe;
+}
+.radio-player b {
+  font-size: 1em;
+  color: #fff;
+}
+.radio-player .song-info {
+  list-style: none;
+  color: #fefefe;
+  font-size: 0.8em;
+  font-weight: bold;
+  text-align: left;
+}
+.radio-player .song-info li:first-child {
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+.radio-player .song-info li {
+  margin-bottom: -5px;
+}
+.radio-player .fa {
+  color: #fefefe;
+  font-size: 50px;
+}
+.radio-player .radio-switch {
+  padding-top: 10px;
+}
+
+/* Carousel - Silvena Lam */
+#slide{
+	width:100%;
+	}
+
+.mySlides {
+	display: none;
+}
+
+.slideshow-container {
+	width: 100%;
+	position: relative;
+	margin-top: 5px;
+
+}
+
+.slide-dots{
+  text-align: center;
+  margin-top: -35px;
+  padding-bottom: 20px;
+  background-color: #66646400;
+  position: relative;
+}
+
+.prev, .next {
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	width: auto;
+	padding: 16px;
+	margin-top: -22px;
+	color: white;
+	font-weight: bold;
+	font-size: 18px;
+	transition: 0.6s ease;
+	border-radius: 0 3px 3px 0;
+}
+/* Position the "next button" to the right */
+.next {
+	right: 0;
+	border-radius: 3px 0 0 3px;
+}
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+	background-color: rgba(0,0,0,0.8);
+}
+/* Caption text */
+.text {
+	color: #f2f2f2;
+	font-size: 15px;
+	padding: 8px 12px;
+	position: absolute;
+	bottom: 8px;
+	width: 100%;
+	text-align: center;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+	cursor: pointer;
+	height: 13px;
+	width: 13px;
+	margin: 0 2px;
+	background-color: #bbb;
+	border-radius: 50%;
+	display: inline-block;
+	transition: background-color 0.6s ease;
+}
+.active, .dot:hover {
+	background-color: #717171;
+}
+/* Fading animation */
+.fade {
+	-webkit-animation-name: fade;
+	-webkit-animation-duration: 2s;
+	animation-name: fade;
+	animation-duration: 2s;
+}
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* Archive -- Eliott Webb & Silvena Lam*/
+.archivethumb {
+  width: 150px !important;
+  height: 150px !important;
+  float: left;
+}
+
+.archive.card {
+  display: inline-block;
+  padding: 15px;
+  margin-top: 15px;
+  width: 100%;
+}
+
+.archive.card-section {
+	float: right;
+    width: 88%;
+	padding: 0;
+}
+
+/*Pagination Button - Eliott Webb & Silevna Lam*/
+.paginationlinks p {
+  color: $black;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: .1em;
+}
+
+.paginationlinks span {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  margin: 0 4px;
+  text-decoration: none;
+  transition: background-color .3s;
+  border: 1px solid #DDD;
+  margin-bottom: 0.9375rem;
+}
+
+.paginationlinks span.current {
+  background-color: #F27405;
+  padding: 8px 16px;
+  margin: 0 4px;
+  float: left;
+  transition: background-color .3s;
+  color: white;
+  border: 1px solid #F27405;
+}
+.paginationlinks span.active {
+  background-color: #F27405;
+  padding: 8px 16px;
+  margin: 0 4px;
+  float: left;
+  transition: background-color .3s;
+  color: white;
+  border: 1px solid #F27405;
+}
+
+.page-numbers {
+  color: black;
+  background-color: white;
+  float: left;
+  padding: 8px 16px;
+  margin: 0 4px;
+  text-decoration: none;
+  transition: background-color .3s;
+  border: 1px solid #DDD;
+  margin-bottom: 0.9375rem;
+}
+
+.page-numbers:hover {
+  color: #F27405;
+  background-color: #000000A6;
+  float: left;
+  cursor: pointer;
+  padding: 8px 16px;
+  margin: 0 4px;
+  text-decoration: none;
+  transition: background-color .3s;
+  border: 1px solid #F27405;
+  margin-bottom: 0.9375rem;
+}
+
+.prev.page-numbers, .next.page-numbers{
+  color: #F27405;
+  background-color: white;
+  position: relative;
+  font-size: 100%;
+  padding: 8px 16px;
+  margin: 0 4px;
+}
+
+.prev.page-numbers:hover, .next.page-numbers:hover{
+  background-color: #000000A6;
+}
+
+/* Button Position Fix -- SL*/
+.contest-content-style, .trending-content-style{
+  padding-top: 15px;
+}
+
+.programs_link > .button:hover, .contests_link > .button:hover, .trending_link > .button:hover, .contact_link > .button:hover, .sponsors_link > .button:hover, .about_link > .button:hover{
+  cursor: pointer;
+}
+
+.related > .button:hover{
+  cursor: default;
+  pointer-events: none;
+}
+
+.contact-submit{
+    background: #F27405 !important;
+    display: inline-block !important;
+    text-align: center !important;
+    cursor: pointer !important;
+    -webkit-appearance: none !important;
+    -webkit-transition: all .25s ease-out !important;
+    transition: all .25s ease-out !important;
+    border: 1px solid transparent !important;
+    border-radius: 0 !important;
+    padding: .85em 1em !important;
+    margin: 0 1rem 1rem 0 !important;
+    font-size: .9rem !important;
+    color: #fff !important;
+}
+
+.contact-submit:focus, .contact-submit:hover {
+    background: #1583cc !important;
+    color: #fff !important;
+}
